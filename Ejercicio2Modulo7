@@ -1,0 +1,21 @@
+import time as t
+
+def main():
+
+    A = t.ctime()
+    A = A.split()
+    HH = int(A[3][0:2])
+    MM = int(A[3][3:5])
+    SS = int(A[3][6:8])
+    print(t.ctime())
+
+    if( HH <= 18):
+        restaH = 18 - HH
+        restaM = 59 - MM
+        restaS = 59 - SS
+        print("Tu hora de salida es a las 19:00:00, y te faltan: " + str(restaH) + ":" + str(restaM) + ":" + str(restaS))
+    else:
+        print("Es hora de salida ")
+
+if __name__ == '__main__':
+    main()
