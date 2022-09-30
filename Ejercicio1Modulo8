@@ -1,0 +1,17 @@
+suma.py
+f = open('miFichero.txt', 'a')
+f.write("datos\n")
+f.write("datos2\n")
+f.close()
+
+
+miFichero.txt
+datos
+datos2
+datos
+datos2
+datos
+datos2
+
+
+__init__.py
