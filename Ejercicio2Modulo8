@@ -1,0 +1,14 @@
+suma.py
+p = open('guardarArchivo.txt', 'a')
+class Vehiculo():
+    pass
+
+
+
+v = Vehiculo()
+p.write(str(v))
+
+guardarArchivo.txt
+<__main__.Vehiculo object at 0x0000016A33ECBD90>
+
+__init__.py
