@@ -1,0 +1,24 @@
+def main():
+    Paises = ['','','']
+    for x in Paises:
+        pais = input("Ingrese un pais: ")
+        Paises.append(pais)
+        Paises = list(set(Paises))
+        print(sorted(Paises))
+
+
+
+if __name__ == '__main__':
+    main()
+    
+CONSOLA ---------------
+Ingrese un pais: Peru
+['', 'Peru']
+Ingrese un pais: Colombia
+['', 'Colombia', 'Peru']
+Ingrese un pais: Ecuador
+['', 'Colombia', 'Ecuador', 'Peru']
+Ingrese un pais: Peru
+['', 'Colombia', 'Ecuador', 'Peru']
+
+Process finished with exit code 0
