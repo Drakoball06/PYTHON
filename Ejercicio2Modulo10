@@ -1,0 +1,29 @@
+import tkinter
+from tkinter import ttk
+
+def mifuncion():
+    print("Pulso Perú")
+
+def mifuncion2():
+    print("Pulso Ecuador")
+
+def mifuncion3():
+    print("Pulso SALIR")
+    window.quit()
+
+window = tkinter.Tk()
+label1 = tkinter.Label(window, text="Bienvenidos a mi GUI", bg="Red", fg="white")
+label1.grid(column=0, row = 1, pady = 5, padx = 5)
+
+window.columnconfigure(0,weight=1)
+window.columnconfigure(0,weight=3)
+
+selected = tkinter.StringVar()
+radioB = ttk.Radiobutton(window, text='Perú', value = 1, variable = selected, command=mifuncion)
+radioB1 = ttk.Radiobutton(window, text='Ecuador', value = 2, variable = selected, command=mifuncion2)
+radioB2 = ttk.Radiobutton(window, text='Salir', value = 3, variable = selected, command=mifuncion3)
+radioB.grid(column=0, row = 2, pady = 5, padx = 5)
+radioB1.grid(column=0, row = 3, pady = 5, padx = 5)
+radioB2.grid(column=0, row = 4, pady = 5, padx = 5)
+
+window.mainloop()
